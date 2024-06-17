@@ -1,0 +1,71 @@
+
+td{
+    background-color: rgb(200, 152, 214);
+    border: 2px solid black;
+    padding: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+tr{
+    border: 2px solid black;
+    padding: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+div.GitHub{
+    h3{
+        border-left: 4px solid purple;
+        padding-left: 10px;
+        border-radius: 4px;
+    }
+}
+
+div.Git{
+    h3{
+        border-left: 4px solid purple;
+        padding-left: 10px;
+        border-radius: 4px;
+    }
+}
+
+IMG.gith{
+    width: 850px;
+    text-align: center;
+}
+
+h1{
+    border-left: 4px solid purple;
+    padding-left: 10px;
+    border-radius: 4px;
+}
+
+div.Tutorial{
+    h3{
+    border-left: 4px solid purple;
+    padding-left: 10px;
+    border-radius: 4px;
+    }
+}
+
+IMG.tut{
+    border: 1px solid black;
+    box-shadow: 3px 3px 5px purple;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.CENTRO{
+    text-align: center;
+    h1{
+        border-left: 4px purple;
+    }
+}
+
+.audio{
+    text-align: center;
+    h1{
+        border-left: 4px purple;
+    }
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Comandos GIT</title>
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">Início</a>
+        <a href="video.html">Video</a>
+        <a href="audio.html">Áudio</a>
+    </header>
+
+    <div class="GitHub">
+    <h1>Git Hub</h1>
+    <p>
+        O GitHub é uma plataforma de hospedagem de código fonte baseada em Git 
+        que facilita o <mark>gerenciamento de projetos 
+        de software e colaboração 
+        entre desenvolvedores</mark>.
+    </p>
+    <br>
+    <img src="img/github-simbolo-1060x565.jpg" alt="logo" class="gith">
+    <h3>Repositórios</h3>
+    <p>
+        Repositórios são locais onde seu projeto é armazenado, ele possui todos 
+        os arquivos de um projeto <small>(commits,branches tags e metadados)</small>.
+    </p>
+    <h3>Git e Controle de Versão</h3>
+    <p>
+        O GitHub utiliza o sistema de controle de versão distribuído Git para gerenciar 
+        os arquivos dentro de cada repositório. O Git permite que várias pessoas trabalhem 
+        simultaneamente no mesmo projeto, gerenciando suas próprias cópias locais do repositório.
+    </p>
+    <h3>Colaboração e Pull Requests</h3>
+    <p>
+        Pull Request: É um mecanismo no GitHub para propor alterações no código.
+        Visando facilitar a revisão do código, a discussão de ideias e a 
+        garantia de que as mudanças não quebrem o código existente.
+
+    </p>
+    <h3>Issues e Gestão de Projetos</h3>
+    <p>
+        Issues: São usadas para acompanhar tarefas, bugs, solicitações de funcionalidades 
+        e outras melhorias no projeto. Sendo que cada issue pode ser atribuída por um 
+        colaborador,comentada, marcada com etiquetas (<i>labels</i>), e fechada quando resolvida.
+        
+        Gestão de Projetos:O GitHub oferece ferramentas para gerenciar projetos e acompanhar 
+        o progresso de cada item.
+
+    </p>
+    <h3>Integração Contínua e Automação</h3>
+    <p>
+        GitHub Actions: Permite configurar fluxos de trabalho automatizados, como testes 
+        automatizados, compilação de código, deploy automático, entre outros, diretamente 
+        no GitHub.
+    </p>
+    <h3>Segurança e Colaboração</h3>
+    <p>
+        Controle de Acesso: Repositórios podem ser <b>públicos</b> <small>(acessíveis a todos)</small> 
+        ou <b>privados</b> <small>(acesso restrito a colaboradores específicos)</small>. É possível 
+        gerenciar permissões para cada membro da equipe.
+
+        Revisão de Código: A funcionalidade de revisão de código do GitHub permite que os 
+        membros da equipe revisem as alterações propostas antes da mesclagem, garantindo a 
+        qualidade do código.
+    </p>
+    <h3>Social e Comunidade</h3>
+    <p>
+        Perfil de Usuário: Cada usuário e organização no GitHub possui um perfil público 
+        ou privado que lista seus repositórios, contribuições para projetos open source, 
+        e outros detalhes.
+    </p>
+    <br>
+    </div>
+
+    <div class="Git">
+        <h1>Sistema de controle de versão GIT</h1>
+        <p>
+            O Git é um sistema de controle de versão distribuído amplamente utilizado para 
+            o <mark>de código fonte e acompanhamento de alterações em projetos de 
+            software</mark>.
+        </p>
+        <img src="img/logogit.jpg" alt="logogit" class="gith">
+        <h3>Funcionamento Básico do Git</h3>
+        <p>
+            O Git armazena todas as alterações feitas nos arquivos de um projeto ao longo 
+            do tempo. Cada mudança é registrada como um "commit", que inclui um instantâneo 
+            dos arquivos naquele momento, junto com informações como autor, mensagem de commit 
+            e um identificador único (<i>hash</i>).
+
+            Cada desenvolvedor tem uma cópia completa do repositório Git em seu computador.
+            Isso permite que trabalhem offline, realizem <b>commits</b> localmente e depois sincronizem 
+            suas mudanças com outros repositórios remotos, como o GitHub.
+        </p>
+        <h3>Ramos (<i>Branches</i>)</h3>
+        <p>
+            Desenvolvimento Paralelo: Os ramos permitem que várias linhas de desenvolvimento 
+            ocorram simultaneamente. Integração e Fusão: Após concluir o trabalho em um ramo, 
+            é possível fundir (<i>merge</i>) as alterações de volta ao ramo principal ou a outro ramo.
+        </p>
+        <h3>Área de Staging (<i>Index</i>)</h3>
+        <p>
+            Preparação de Commits: Antes de confirmar mudanças com um commit, os arquivos 
+            são adicionados à área de <b>staging</b>. Isso permite revisar e selecionar quais 
+            mudanças devem ser incluídas no próximo commit.
+        </p>
+        <h3>Sincronização</h3>
+        <p>
+            Push e Pull: git push envia alterações locais para o repositório remoto, 
+            enquanto git pull atualiza o repositório local com mudanças feitas no <b>repositório 
+            remoto</b>.
+        </p>
+        <h3>Integração Contínua e Automação</h3>
+        <p>
+            GitHub Actions e GitLab CI: Ferramentas de integração contínua <small>(CI)</small> permitem 
+            automatizar testes de código, build de aplicativos e deploy automático diretamente 
+            a partir do Git.
+        </p>
+        <h3>Ramificação e Versão</h3>
+        <p>
+            Tagging: Marcadores (<i>tags</i>) são usados para marcar pontos específicos na história 
+            do repositório, como versões de software estáveis ou marcos importantes.
+        </p>
+        <br>
+    </div>
+
+    <table>
+        <tr>
+        <h1>Comandos GIT</h1>
+        </tr>
+        <td>
+    <h3>Git Init</h3>
+    <ul>
+        <li>
+            Comando utilizado para inicializar um novo repositório.
+            Ele cria uma nova instância de um repositório Git em um diretório existente ou novo.
+        </li>
+    </ul>
+    <h3>Git Clone</h3>
+    <ul>
+        <li>
+            Git clone é o comando usado para criar uma cópia exata de um repositório Git.
+        </li>
+    </ul>
+    <h3>Git Branch</h3>
+    <ul>
+        <li>
+            Ele permite criar, listar, renomear e excluir branches    .
+        </li>
+    </ul>
+    <h3>Git Checkout</h3>
+    <ul>
+        <li>
+            Usado principalmente para trocar de branch ou restaurar arquivos em um repositório.
+        </li>
+    </ul>
+    <h3>Git Status</h3>
+    <ul>
+        <li>
+            É o comando que exibe o estado atual da árvore de trabalho do Git.
+            
+        </li>
+        
+    </ul>
+    <h3>Git Diff</h3>
+    <ul>
+        <li>
+            Compara o conteúdo de arquivos no repositório em diferentes estados.
+        </li>
+    </ul>
+    <h3>Git Add</h3>
+    <ul>
+        <li>
+            É o comando que adiciona mudanças de arquivos à área de stage (índice).
+        </li>
+        
+    </ul>
+    <h3>Git Commit</h3>
+    <ul>
+        <li>
+            Git commit cria um snapshot permanente das alterações preparadas no índice, 
+            com uma mensagem de commit que descreve essas mudanças   .
+        </li>
+        
+    </ul>
+    <h3>Git Push</h3>
+    <ul>
+        <li>
+            É usado para enviar commits locais para um repositório remoto.
+        </li>
+        
+    </ul>
+    <h3>Git Pull</h3>
+    <ul>
+        <li>
+            É usado para atualizar o repositório local com as mudanças 
+            do repositório remoto.
+        </li>
+    </ul>
+    <h3>Git Revert</h3>
+    <ul>
+        <li>
+            Cria um novo commit que desfaz as alterações introduzidas 
+            por um commit anterior.
+        </li>
+    </ul>
+    
+    
+    <h3>Git Merge</h3>
+    <ul>
+        <li>
+            É usado para mesclar alterações de um branch para outro branch.
+        </li>
+    </ul>
+    </td>
+    <td>
+    <h3>Git Stash</h3>
+    <ul>
+        <li>
+            É utilizado para armazenar temporariamente mudanças não commitadas 
+            em um espaço de trabalho Git.
+        </li>
+    </ul>
+    <h3>Git RM</h3>
+    <ul>
+        <li>
+            É utilizado para remover arquivos ou diretórios do controle de versão do Git.
+        </li>
+    </ul>
+    <h3>Git Config</h3>
+    <ul>
+        <li>
+            É utilizado para configurar variáveis de configuração do Git em 
+            diferentes níveis: sistema, usuário e repositório.
+        </li>
+    </ul>
+    <h3>Git Reset</h3>
+    <ul>
+        <li>
+            É usado para desfazer alterações e redefinir o estado do repositório Git.
+        </li>
+    </ul>
+    <h3>Git Remote</h3>
+    <ul>
+        <li>
+            É usado para listar, adicionar e gerenciar conexões com repositórios remotos.
+        </li>
+    </ul>
+    <h3>Git Fetch</h3>
+    <ul>
+        <li>
+            É usado para baixar commits, arquivos e referências 
+            de um repositório remoto para o seu repositório local.
+        </li>
+    </ul>
+    <h3>Git Show</h3>
+    <ul>
+        <li>
+            É utilizado para exibir informações detalhadas sobre um objeto Git específico.
+        </li>
+    </ul>
+    <h3>Git Help</h3>
+    <ul>
+        <li>
+            É utilizado para obter informações de ajuda detalhadas sobre comandos Git específicos.
+        </li>
+        
+    </ul>
+    <h3>Git Rebase</h3>
+    <ul>
+        <li>
+            É usado para reorganizar o histórico de commits em um repositório.
+        </li>
+    </ul>
+    <h3>Git Blame</h3>
+    <ul>
+        <li>
+            É um comando usado  para determinar qual commit e autor 
+            foram responsáveis por cada linha de um arquivo específico.
+        </li>
+    </ul>
+    <h3>Git Tag</h3>
+    <ul>
+        <li>
+            É utilizado para gerenciar tags, que são marcadores usados 
+            para marcar pontos específicos na história de um repositório Git.
+        </li>
+    </ul>
+    </tr>
+    </table>
+    <br>
+
+    <div class="Tutorial">
+        <h1>Tutorial de uso GIT</h1>
+        <h3>1° Passo-Instalar o GIT no Sistema Operacional</h3>
+        <ol>
+            <li>Verificar se o git já está instalado no computador.
+
+                Para isso, abra o prompt de comando e digite o seguinte
+                comando:
+            </li>
+            <br>
+            <img src="img/gitversion.jpg" alt="VerificaçãodeInstalação" class="tut">
+            <hr style="border: solid white">
+            <li>
+                Se o git não estiver instalado, abra o navegador, acesse o 
+                <a href="https://www.git-scm.com/downloads">site oficial</a>
+                do GIT e faça o download do instalador do git.
+            </li>
+            <br>
+            <li>
+                Depois de baixado, clique duas vezes no arquivo para iniciar o assistente de 
+                instalação. Basta seguir as instruções na tela, clicando em Next. Ao término, 
+                clique em Finish para concluir com êxito a instalação.
+            </li>
+            <li>Abra o prompt de comando e digite os seguintes comandos no terminal:</li>
+            <br>
+            <img src="img/gitlogin.jpg" alt="logingit" class="tut">
+            <hr style="border: solid white">
+        </ol>
+        <h3>Criar-Configurar-Verificar um repositório</h3>
+        <ol>
+            <li>
+                Para transformar qualquer diretório em um repositório GIT, digite o seguinte
+                comando:
+            </li>
+            <br>
+            <img src="img/gitinitex.jpg" alt="initgit" class="tut">
+            <hr style="border: solid white">
+            <li>
+                Se você já tem um diretório e deseja verificar, você pode usar o 
+                comando git clone. 
+                <br>
+                Se você estiver tentando verificar um repositório local, 
+                use o seguinte comando:
+                <hr style="border: solid white">
+                <img src="img/gitclone1.jpg" alt="clone1" class="tut">
+                <hr style="border: solid white">
+                Se você pretende verificar um repositório armazenado remotamente, use:
+                <hr style="border: solid white">
+                <img src="img/clone2.jpg" alt="clone2" class="tut">
+            </li>
+        </ol>
+        <br>
+        <h3>Fluxo de Trabalho</h3>
+        <ol>
+            <li>
+                Cada repositório local consiste em três árvores: o diretório de trabalho 
+                que contém os arquivos reais; O índice que desempenha o papel de uma área de 
+                teste e o HEAD que é um ponteiro para o último commit feito pelo usuário.
+                <br>
+                Então, é assim que o fluxo de trabalho pode ser explicado: o usuário adiciona 
+                um arquivo ou alterações do diretório de trabalho para o índice (a área de teste) 
+                e uma vez revistos, o arquivo ou as alterações são finalmente comprometidos com o HEAD.
+            </li>
+        </ol>
+        <h3>Os comandos Add e Commit</h3>
+        <ol>
+            <li>
+                Alterações ou adições de arquivos propostas são adicionadas ao índice usando o comando add:
+                <hr style="border: solid white">
+                <img src="img/add.jpg" alt="add" class="tut">
+                <hr style="border: solid white">
+            </li>
+            <li>
+                Se você deseja fazer essas mudanças no HEAD, então você pode usar o comando commit:
+                <hr style="border: solid white">
+                <img src="img/add2.jpg" alt="add2" class="tut">
+                <hr style="border: solid white">
+            </li>
+        </ol>
+        <h3>Os comandos Push e Remote</h3>
+        <ol>
+            <li>
+                Se você deseja enviar as informações do HEAD para o repositório remoto, precisa utilizar o
+                comando push:
+                <hr style="border: solid white">
+                <img src="img/push.jpg" alt="push" class="tut">
+                <hr style="border: solid white">
+            </li>
+            <li>
+                Se, no entanto, um repositório existente ainda não tiver sido clonado e você pretende 
+                estabelecer uma ligação entre o seu repositório e um servidor remoto, execute o seguinte 
+                comando:
+                <hr style="border: solid white">
+                <img src="img/remote.jpg" alt="remote" class="tut">
+                <hr style="border: solid white">
+            </li>
+        </ol>
+        <h3>Branches</h3>
+        <ol>
+            <li>
+                O objetivo principal de um branch é desenvolver novas funcionalidades, mantendo-os isolados 
+                uns dos outros. O branch padrão em qualquer projeto é sempre o master branch. Tantos branches 
+                quanto necessários podem ser criados e eventualmente mesclados ao master branch.
+                <br>
+                Um novo branch pode ser criado usando o seguinte comando:
+                <hr style="border: solid white">
+                <img src="img/branch.jpg" alt="branch" class="tut">
+                <hr style="border: solid white">
+            </li>
+            <li>
+                Para tornar o branch disponível para outros usuários, você terá que movê-lo para o repositório 
+                remoto. Para fazer isso, use o seguinte comando:
+                <hr style="border: solid white">
+                <img src="img/pushbranch.jpg" alt="pushbranch" class="tut">
+                <hr style="border: solid white">
+            </li>
+        </ol>
+        <h3>Substituindo Alterações Locais</h3>
+        <ol>
+            <li>
+                Se você acabou fazendo bagunça e precisa reverter as alterações feitas em qualquer 
+                arquivo, faça isso usando o seguinte comando:
+                <hr style="border: solid white">
+                <img src="img/checkout.jpg" alt="checkout" class="tut">
+                <hr style="border: solid white">
+            </li>
+            <li>
+                Se todas as alterações/commits locais devem ser eliminados e o master branch local 
+                for necessário para apontar para o histórico mais recente do servidor, execute os 
+                seguintes comandos:
+                <hr style="border: solid white">
+                <img src="img/fetchreset.jpg" alt="fetchreset" class="tut">
+                <hr style="border: solid white">
+            </li>
+        </ol>
+
+    </div>
+</body>
+</html>
